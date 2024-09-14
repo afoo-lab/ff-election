@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>FF Election 2025</h1>
+        </header>
+        <main>
+            <section id="vote-section">
+                <h2>Vote for Your Favorite Candidate</h2>
+                <div id="candidates">
+                    <!-- Candidates will be dynamically inserted here -->
+                </div>
+                <button id="submit-vote">Submit Vote</button>
+            </section>
+            <section id="results-section">
+                <h2>Results</h2>
+                <p id="total-voters">Total Voters: 0</p>
+                <canvas id="results-chart"></canvas>
+                <ul id="results">
+                    <!-- Results will be dynamically inserted here -->
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 FF Election Bureau. Forensic Friends</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
