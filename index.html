@@ -3,38 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voting Application</title>
+    <title>Vote for President & Vice President</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div id="app">
-        <header>
-            <h1>FF Election 2025</h1>
-        </header>
-        <main>
-            <section id="vote-section">
-                <h2>Vote for Your Favorite Candidate</h2>
-                <div id="candidates">
-                    <!-- Candidates will be dynamically inserted here -->
-                </div>
-                <button id="submit-vote">Submit Vote</button>
-            </section>
-            <section id="results-section">
-                <h2>Results</h2>
-                <p id="total-voters">Total Voters: 0</p>
-                <canvas id="results-chart"></canvas>
-                <ul id="results">
-                    <!-- Results will be dynamically inserted here -->
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 FF Election Bureau. Forensic Friends</p>
-        </footer>
+    <div class="poll-container">
+        <h1>FF Election 2025 <img src="images/ff-logo.png" alt="" width="50px"></h1>
+
+        <!-- Voting Form -->
+        <form id="vote-form">
+            <div class="candidate">
+                <input type="radio" name="vote" value="Candidate 1" id="candidate1">
+                <label for="candidate1">
+                    <div class="candidate-info">
+                        <img src="images/rifaz.png" alt="President 1" class="candidate-photo">
+                        <img src="images/thooza.png" alt="Vice President 1" class="candidate-photo">
+                    </div>
+                    <div class="candidate-names">
+                        <span class="president-name">Rifaz & Thooza</span><br>
+                        
+                    </div>
+                </label>
+            </div>
+
+            <div class="candidate">
+                <input type="radio" name="vote" value="Candidate 2" id="candidate2">
+                <label for="candidate2">
+                    <div class="candidate-info">
+                        <img src="images/shakeeb.png" alt="President 2" class="candidate-photo">
+                        <img src="images/nabala.png" alt="Vice President 2" class="candidate-photo">
+                    </div>
+                    <div class="candidate-names">
+                        <span class="president-name">Shakeeb & Nabala</span><br>
+                        
+                    </div>
+                </label>
+            </div>
+
+            <div class="candidate">
+                <input type="radio" name="vote" value="Candidate 3" id="candidate3">
+                <label for="candidate3">
+                    <div class="candidate-info">
+                        <img src="images/lulu.png" alt="President 3" class="candidate-photo">
+                        <img src="images/adhuham.png" alt="Vice President 3" class="candidate-photo">
+                    </div>
+                    <div class="candidate-names">
+                        <span class="president-name">Lu'lu & Adhuham</span><br>
+                        
+                    </div>
+                </label>
+            </div>
+
+            <button type="submit">Submit Vote</button>
+        </form>
+
+        <!-- Thank You Message -->
+        <div id="thank-you" style="display: none;">
+            <h2>Thank You for Your Vote!</h2>
+            <p>Your vote has been submitted successfully. Here are the current results:</p>
+        </div>
+
+        <!-- Results Section with Photos -->
+        <div id="results" style="display: none;">
+            <h2>Results:</h2>
+            <p>Total Voters: <span id="total-voters">0</span></p>
+            <div class="result">
+                <img src="images/rifaz.png" alt="President 1" class="result-photo">
+                <p>Rifaz & Thooza: <span id="candidate1-votes">0</span> votes</p>
+            </div>
+            <div class="result">
+                <img src="images/shakeeb.png" alt="President 2" class="result-photo">
+                <p>Shakeeb & Nabala: <span id="candidate2-votes">0</span> votes</p>
+            </div>
+            <div class="result">
+                <img src="images/lulu.png" alt="President 3" class="result-photo">
+                <p>Lu'lu & Adhuham: <span id="candidate3-votes">0</span> votes</p>
+            </div>
+        </div>
+
+        <!-- Testimonial Section -->
+        <div id="testimonial">
+            <h2>Message from the FF Election Bureau</h2>
+            <img src="images/afoo.png" alt="President Photo" class="president-photo">
+            <p>"I urge each and everyone of you to exercise your right to vote. Your vote is your voice, and it has the power to shape the future of FF. Thank you all for your support and participation in this election. Together, let us ensure a fair and just election."</p>
+            <p><strong>Ahmed Thauseef</strong></p>
+            <p>(President of FF Election Bureau)</p>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Voting App. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
-
-

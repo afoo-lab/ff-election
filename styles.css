@@ -1,92 +1,143 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-#app {
-    max-width: 800px;
-    margin: 0 auto;
+.poll-container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: white;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header {
+h1, h2 {
     text-align: center;
-    margin-bottom: 20px;
 }
 
-h1 {
-    margin: 0;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-#candidates {
-    display: flex;
-    flex-direction: column;
+form {
+    margin: 20px 0;
 }
 
 .candidate {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.candidate-info {
+    display: flex;
+    align-items: center;
 }
 
 .candidate img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
     margin-right: 10px;
 }
 
-.candidate input[type="radio"] {
-    margin-right: 10px;
+.candidate-names {
+    font-size: 16px;
+    margin-top: 5px;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #007BFF;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
     border: none;
-    color: #fff;
     cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #218838;
 }
 
 #results {
-    list-style: none;
-    padding: 0;
+    text-align: center;
+    margin-top: 20px;
 }
 
-#results li {
+#results p {
+    font-size: 18px;
+}
+
+/* Testimonial Styles */
+#testimonial {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#testimonial h2 {
+    margin-bottom: 10px;
+}
+
+#testimonial p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.president-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    font-size: x-small;
+}
+
+.ff-logo {
+    text-align: center;
+    align-items: center;
+}
+
+#thank-you p {
+    text-align: center;
+}
+
+.result {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
-#results img {
+.result img {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
     margin-right: 10px;
 }
-#total-voters {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-#results-chart {
-    width: 100%;
-    height: 400px;
+
+.result p {
+    font-size: 18px;
 }
